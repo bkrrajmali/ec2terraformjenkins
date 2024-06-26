@@ -13,5 +13,10 @@ pipeline {
                 sh 'sudo apt-get install terraform -y'
             }
         }
+        stage ('Find  Terraform Version') {
+            steps {
+                sh ' terraform -version'
+            }
+        }
     }
 }
