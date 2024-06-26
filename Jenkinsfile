@@ -18,5 +18,10 @@ pipeline {
                 sh ' terraform -version'
             }
         }
+        stage ('Terraform Initilization') {
+            steps {
+                sh ' terraform init'
+            }
+        }
     }
 }
